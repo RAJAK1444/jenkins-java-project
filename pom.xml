@@ -28,6 +28,16 @@
 		</dependency>
 
 	</dependencies>
+	<build> <!-- Added sonarqube version -->
+    	<plugins>
+        	<plugin>
+            		<groupId>org.sonarsource.scanner.maven</groupId>
+            		<artifactId>sonar-maven-plugin</artifactId>
+            		<version>8.9.6.50800</version> <!-- Or whatever version you currently have -->
+        	</plugin>
+    	</plugins>
+	</build>
+
 	
 	<distributionManagement>
 		 <snapshotRepository>
